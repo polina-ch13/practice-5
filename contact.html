@@ -1,0 +1,95 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv= "Content-Type" content= "text/html; charset=UTF-8" >
+	<title> 3 Column Layout </title>
+	<link rel= "stylesheet" type="text/css" href= "assets/css/style.css" >
+	<link rel= "shortcut icon" type="image/png" href= "assets/img/moon-icon.png" >
+	<script src="assets/js/script.js">	
+	</script>
+
+</head>
+
+<body>
+	<header class="header" ><p> Header... </p></header>
+	<div id="main">
+		<nav id="left">
+			<h3> Left heading </h3>
+			<ul>
+				<li><a href= "index.html" > Main </a><li>
+				<li><a href= "contact.html" > Contact </a></li>
+				<li><a href= "about.html" > About </a></li>
+				<li><a href= "slider.html" > Slider </a></li>
+				<li><a href= "media.html" > Media </a></li>
+				<li><a href= "table.html" > Table </a></li>
+			</ul>
+		</nav>
+		<div id="right">
+			<h3> Right heading </h3>
+		</div>
+		<div id="center" class="contact">
+		<table class="usform">
+			<h1> Contact </h1> 
+			<tr> <td> <h2> User details </h2> </td> 
+			<td> <h2> Account details </h2> </td> </tr>
+			<tr> <td> <p> Full name * <br>
+			<input type="text" class="text-line" id="username">
+			</p>
+			</td>
+			<td> <p> </p> <input type="text" class="text-line" id="usr" placeholder="Username *"> </td>
+			</tr>
+			<tr> <td>
+			<p>
+			<input type="text" class="text-line" placeholder="Your birthday *" onfocus="(this.type='date')" onblur="(this.type='text')" id="birth">
+			</p>
+			</td> 
+			<td> <input type="text" class="text-line" id="email" placeholder="Email *">
+			</td>
+			</tr>
+			<tr> <td>
+			<input list="gender" class="text-line" placeholder="Gender" id="gender">			
+			<datalist id="gender">
+			<option value="Female">
+			<option value="Male">
+			</datalist>
+			</td> 
+			<td> <input type="password" class="text-line" id="pass" placeholder="Password *"> </td>
+			</tr>
+			<tr> <td>
+			<p> Country </p>
+			<input list="country" placeholder="Select country" id="country" class="text-line">		
+			<datalist id="country">
+			<option value="Ukraine">
+			<option value="Russia">
+			<option value="Italy">
+			<option value="Japan">
+			<option value="China">
+			</datalist>
+			
+			<input type="text" id="phone" placeholder="Phone *" class="text-line">
+			<br>
+			<p class="phone"> <small> Mobile: 094 231 234 ᅠᅠ ᅠᅠ ᅠᅠ </small> <small> Fixed: 2123 1234</small></p>
+			</td> 
+			
+			<td> <p></p> <input type="password" class="text-line" id="confpass" placeholder="Confirm password *"> </td>
+			</tr>
+			<tr> <td>
+			<p>Bio</p>
+			<textarea class="text-line" value="" id="myText" maxlength="256" onkeyup="count_up(this);"> 
+			</textarea>
+			<br>
+			<p class="yourself"><small>Tell us about yourself</small> ᅠ ᅠᅠ ᅠᅠ ᅠᅠ ᅠᅠ ᅠᅠ ᅠᅠ ᅠᅠ ᅠᅠ ᅠᅠ <span id="current">0</span>
+			<span id="maximum">/256</span></p>
+			</td> 
+			<td> <input type="checkbox" id="ch"><b><small>I accept terms and conditions</small></b>
+			<p></p>
+			<p> <button type="reset" class="sub" id="sub1"> Submit </button> </p></td> </tr>
+			<tr> <td> <button type="reset" class="sub" id="sub2"> Submit </button> </td></tr>
+		</table>	
+		</div>
+	</div>
+	<div class= "footer-wrapper" >
+		<footer class= "footer" ><p> Footer... <div> <img id="footer_image" src="assets/img/moon-icon.png"> </div> </p>	</footer>
+	</div>
+</body>
+</html>
